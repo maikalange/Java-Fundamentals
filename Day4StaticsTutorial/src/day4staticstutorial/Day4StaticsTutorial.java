@@ -24,6 +24,18 @@ public class Day4StaticsTutorial {
         toyota.startEngine();
 
         System.out.println(" Number of vehicles created " + Vehicle.getInstanceCount());
+
+        ImmutableTermDay itd = ImmutableTermDay.createInstance(3, 4);
+        ImmutableTermDay itd2 = ImmutableTermDay.createInstance(5, 2);
+
+        System.out.println(itd);
+        System.out.println(itd2);
+        printTable();
+
+    }
+    
+    private static void printTable(){
+        System.out.println("Heading1\tHeading2\n1234\t\t989898976\n1234\t\t989898976\n1234\t\t989898976");
     }
 
 }
